@@ -1,0 +1,100 @@
+html {
+    background: black;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    color: white;
+}
+
+p, a, pre {
+    color: white;
+}
+
+span {
+    color: white;
+    font-size: 48px;
+    cursor: pointer;
+    font-family: Arial sans-serif;
+}
+.vl {
+  border-right: 4px solid white;
+  height: 550px;
+  position: absolute;
+    margin-top: -40px;
+  left: 50%;
+  margin-left: -2px;
+}
+div {
+    margin-top: 40px;
+}
+h3 {
+    color: white;
+}
+
+h4 {
+    color: white;
+}
+
+#mySidenav a {
+    position: absolute;
+    left: -115px;
+    margin-top: 50px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 150px;
+    height: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    color: whitesmoke;
+    content-visibility: hidden;
+    border-radius: 0 5px 5px 0;
+    align-content: flex-start;
+
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#mySidenav a {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+#mySidenav a:hover {
+    animation-delay: 1s;
+    content-visibility: visible;
+    left: 0;
+    align-content: flex-start;
+
+}
+
+#about {
+    top: 20px;
+    background-color: #bdb8b8;
+}
+
+#main {
+    top: 90px;
+    background-color: gray;
+}
+
+#conclusions {
+    top: 160px;
+    background-color: darkgray;
+}
+
+#contact {
+    top: 230px;
+    background-color: #424858;
+}
